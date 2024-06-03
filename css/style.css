@@ -1,8 +1,19 @@
 body {
   font-family: sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow-x: auto;
+  overflow-y: scroll;
+  grid-template-columns: 1fr;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.3rem;
 }
 
 h1 {
   color: blue;
-  font-size: 30rem;
 }
