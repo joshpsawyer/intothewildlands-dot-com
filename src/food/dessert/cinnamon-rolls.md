@@ -2,7 +2,6 @@
 title: Overnight Holiday Cinnamon Rolls
 indexname: Cinnamon Rolls, Overnight Holiday
 tags: foods
-layout: food
 ---
 
 # cinnamon rolls
