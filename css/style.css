@@ -11,6 +11,7 @@ body {
   overflow-y: scroll;
   grid-template-columns: 1fr;
   margin: 0 auto;
+  cursor: url("/assets/images/cursor-pointer.png") 12 0, auto;
 }
 
 #nav-wrapper nav {
@@ -43,6 +44,7 @@ p {
   line-height: 1.3rem;
 }
 
-h1 {
-  color: blue;
+a {
+  outline: 0;
+  cursor: url("/assets/images/cursor-hand.png") 12 0, auto;
 }
