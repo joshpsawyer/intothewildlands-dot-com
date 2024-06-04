@@ -1,5 +1,5 @@
 ---
-title: "cora's jelly graham cracker sandwich... that's quick!"
+title: Cora's Jelly Graham Cracker Sandwich... That's Quick!
 indexname: Graham Cracker Jelly Sandwich
 tags: foods
 date: 2024-06-03
