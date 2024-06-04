@@ -1,4 +1,5 @@
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("./src/css");
     eleventyConfig.addWatchTarget("./src/css/");
     eleventyConfig.setBrowserSyncConfig({

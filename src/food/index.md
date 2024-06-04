@@ -1,6 +1,6 @@
 ---
-title: Overnight Holiday Cinnamon Rolls
-layout: base
+title: Food
+layout: food
 ---
 
 <ul>
