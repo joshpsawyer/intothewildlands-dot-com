@@ -1,3 +1,7 @@
+:root {
+  --site-width: 45rem;
+}
+
 body {
   font-family: sans-serif;
   height: 100vh;
@@ -6,8 +10,33 @@ body {
   overflow-x: auto;
   overflow-y: scroll;
   grid-template-columns: 1fr;
-  max-width: 45rem;
   margin: 0 auto;
+}
+
+#nav-wrapper nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: var(--site-width);
+}
+#nav-wrapper nav a {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+#main-wrapper main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: var(--site-width);
+}
+
+#footer-wrapper footer {
+  margin: 0 auto;
+  max-width: var(--site-width);
+  color: lightgray;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 p {
