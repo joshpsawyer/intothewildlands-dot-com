@@ -30,6 +30,10 @@ body {
   cursor: url("/assets/images/cursor-pointer.png") 12 0, auto;
 }
 
+#nav-wrapper #site-logo-text {
+  text-align: center;
+  font-family: "Kenney Pixel Square", "Share Tech Mono", "Courier Prime", "Courier New", sans-serif;
+}
 #nav-wrapper nav {
   display: flex;
   justify-content: center;
