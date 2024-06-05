@@ -4,7 +4,9 @@ layout: article
 ---
 
 <ul>
-{% for food in collections.foods %}
-<li><a href="{{ food.url }}">{{ food.data.indexname }}</a></li>
+{% for food in collections.foods | reverse %}
+    <li>
+        <a href="{{ food.url }}">{{ food.data.indexname }}</a>
+    </li>
 {% endfor %}
 </ul>
