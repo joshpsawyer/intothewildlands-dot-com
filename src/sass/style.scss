@@ -21,6 +21,23 @@
 	/* font-display: swap; */
 }
 
+@mixin kenney-pixel {
+  font-family: "Kenney Pixel", 'Share Tech Mono', 'Courier Prime', 'Courier New', sans-serif;
+}
+
+@mixin kenney-pixel-1p5x {
+  @include kenney-pixel;
+
+  font-size: 1.5rem;
+}
+
+
+@mixin kenney-pixel-2x {
+  @include kenney-pixel;
+
+  font-size: 2rem;
+}
+
 :root {
   --site-width: 45rem;
   --color-one: #902923;
@@ -45,6 +62,11 @@ body {
 }
 
 #nav-wrapper {
+
+  #site-logo-text {
+    text-align: center;
+    font-family: "Kenney Pixel Square", 'Share Tech Mono', 'Courier Prime', 'Courier New', sans-serif;
+  }
 
   nav {
     display: flex;
@@ -118,22 +140,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Kenney Pixel", 'Share Tech Mono', 'Courier Prime', 'Courier New', sans-serif;
 }
 
-@mixin kenney-pixel {
-    font-family: "Kenney Pixel", 'Share Tech Mono', 'Courier Prime', 'Courier New', sans-serif;
-}
 
-@mixin kenney-pixel-1p5x {
-    @include kenney-pixel;
-
-    font-size: 1.5rem;
-}
-
-
-@mixin kenney-pixel-2x {
-    @include kenney-pixel;
-
-    font-size: 2rem;
-}
 
 #index-nav nav {
   a {

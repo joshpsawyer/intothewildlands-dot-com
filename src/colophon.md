@@ -3,7 +3,7 @@ title: Colophon
 layout: article
 ---
 
-_into the wildlands_</em>_ is:
+_into the wildlands_ is:
 
 - a collection of recipes and tutorials
 - a repository of info for my kids
