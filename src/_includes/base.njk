@@ -9,11 +9,7 @@
 </head>
 <body>
     <div id="nav-wrapper">
-      <nav>
-        <a href="/">home</a>
-        <a href="/food/">food</a>
-        <a href="/about/">about</a>
-      </nav>
+      {% include "partials/navigation.njk" %}
     </div>
     <div id="main-wrapper">
       <main>
@@ -22,7 +18,9 @@
     </div>
     <div id="footer-wrapper">
       <footer>
-        the bottom
+        <a href="/colophon/">
+          <img src="/assets/images/joshglyph.png" alt="a logo for the creator of the website, which goes to the colophon / about section of the site" />
+        </a>
       </footer>
     </div>
 </body>

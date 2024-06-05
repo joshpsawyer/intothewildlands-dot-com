@@ -23,6 +23,9 @@
 
 :root {
   --site-width: 45rem;
+  --color-one: #902923;
+  --color-two: #F5F1C6;
+  --color-three: #631C18;
 }
 
 body {
@@ -36,6 +39,9 @@ body {
     margin: 0 auto;
 
     cursor: url("/assets/images/cursor-pointer.png") 12 0,auto;
+
+    // background-color: var(--color-two);
+    // color: var(--color-two)
 }
 
 #nav-wrapper {
@@ -88,10 +94,13 @@ h1 {
 }
 
 a {
-    outline: 0;
-    cursor: url("/assets/images/cursor-hand.png") 12 0, auto;
+  outline: 0;
+  cursor: url("/assets/images/cursor-hand.png") 12 0, auto;
+  color: var(--color-one);
+}
 
-
+a:hover {
+  color: var(--color-three);
 }
 
 /* Headings */
@@ -124,4 +133,17 @@ h1, h2, h3, h4, h5, h6 {
     @include kenney-pixel;
 
     font-size: 2rem;
+}
+
+#index-nav nav {
+  a {
+    display: block;
+    padding: 1rem 2rem;
+  }
+}
+
+img#article-hero {
+  max-width:100%;
+  width: 100%;
+  height: auto;
 }
