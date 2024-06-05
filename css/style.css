@@ -13,6 +13,9 @@
 }
 :root {
   --site-width: 45rem;
+  --color-one: #902923;
+  --color-two: #F5F1C6;
+  --color-three: #631C18;
 }
 
 body {
@@ -60,6 +63,11 @@ p {
 a {
   outline: 0;
   cursor: url("/assets/images/cursor-hand.png") 12 0, auto;
+  color: var(--color-one);
+}
+
+a:hover {
+  color: var(--color-three);
 }
 
 /* Headings */
@@ -86,4 +94,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1.1;
   font-family: "Kenney Pixel", "Share Tech Mono", "Courier Prime", "Courier New", sans-serif;
+}
+
+#index-nav nav a {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+img#article-hero {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
