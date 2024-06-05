@@ -1,6 +1,6 @@
 ---
 title: Food
-layout: food
+layout: article
 ---
 
 <ul>

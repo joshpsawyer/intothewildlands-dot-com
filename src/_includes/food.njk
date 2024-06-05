@@ -3,7 +3,67 @@ layout: base.njk
 ---
 
 <article>
-    <h1>{{ title }}</h1>    
+    <h1>{{ title }}</h1>
+    <span>Published: {{ published | postDate }}</span>
     <img id="article-hero" src="{{ hero }}" alt="{{ heroalt }}" />
     {{ content | safe}}
+
+
+    {% if ingredients|length %}
+        <h2>Ingredients</h2>
+        {% for ingredient in ingredients %}
+            <h3>{{ ingredient.subheading }}</h3>
+            <ul>
+            {% for ingredient in ingredient.ingredients %}
+                <li>{{ ingredient.label }}
+                {{ ingredient.measurement }}
+                {{ ingredient.measurement_alt }}
+                {{ ingredient.note }}</li>
+            {% endfor %}
+            </ul>
+        {% endfor %}
+    {% endif %}
+
+    {% if instructions|length %}
+        <h2>Steps</h2>
+        <ol>
+        {% for instruction in instructions %}
+            <li>
+                {{ instruction.step }}
+                {% if instruction.image %}
+                <br/><br/><img src="{{ instruction.image }}" alt="{{ instruction.imagealt }}" />
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ol>
+    {% endif %}
+
+    {% if notes|length %}
+        <h2>Notes</h2>
+        <ol>
+            {% for note in notes %}
+            <li>
+                {{ note }}
+            </li>
+            {% endfor %}
+        </ol>
+    {% endif %}
+
+    {% if references|length %}
+        <h2>References</h2>
+        <ol>
+        {% for reference in references %}
+            <li>
+                {% if reference.url %}
+                <a href="{{ reference.url}}" target="_blank">{{ reference.title}}</a>.
+                {% else %}
+                {{ reference.title}}
+                {% endif %}
+                {% if reference.published %}Published: {{ reference.published }}.{% endif %}
+                {% if reference.accessed %}Accessed: {{ reference.accessed }}.{% endif %}
+            </li>
+        {% endfor %}
+        </ol>
+    {% endif %}
+
 </article>

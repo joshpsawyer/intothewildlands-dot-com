@@ -1,3 +1,5 @@
+const { DateTime } = require("luxon");
+
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/CNAME");
     eleventyConfig.addPassthroughCopy("./src/images");
@@ -13,6 +15,10 @@ module.exports = function (eleventyConfig) {
       const params = new URLSearchParams(paramPart || "");
       params.set("v", Math.floor(Date.now() / 1000));
       return `${urlPart}?${params}`;
+    });
+  
+    eleventyConfig.addFilter("postDate", (dateObj) => {
+      return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
   
     // Return your Object options:
