@@ -34,6 +34,9 @@ body {
   text-align: center;
   font-family: "Kenney Pixel Square", "Share Tech Mono", "Courier Prime", "Courier New", sans-serif;
 }
+#nav-wrapper #site-logo-text a {
+  text-decoration: none;
+}
 #nav-wrapper nav {
   display: flex;
   justify-content: center;
@@ -106,6 +109,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img#article-hero {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+img.recipeimage {
   max-width: 100%;
   width: 100%;
   height: auto;
