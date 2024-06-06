@@ -2,7 +2,7 @@
     "structures": [
         {
             "type": "ingredients",
-            "heading": "Dough",
+            "heading": "Ingredients",
             "display_heading": "true",
             "contents": [
                 {
@@ -22,7 +22,7 @@
             "display_heading": "true",
             "contents": [
                 {
-                    "step": "Beak the sheets in half, so they're squares comprised of two crackers."
+                    "step": "Break the sheets in half, so they're squares comprised of two crackers."
                 },
                 {
                     "step": "On two of the squares, spread jelly thinly."
