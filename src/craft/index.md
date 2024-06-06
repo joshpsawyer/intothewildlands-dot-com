@@ -1,6 +1,6 @@
 ---
 title: Craft
-layout: craft
+layout: base
 ---
 
 <ul>

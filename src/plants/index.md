@@ -1,6 +1,6 @@
 ---
 title: Plants
-layout: plant
+layout: base
 ---
 
 <ul>

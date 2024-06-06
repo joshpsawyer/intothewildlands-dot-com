@@ -1,7 +1,9 @@
 ---
 title: Food
-layout: article
+layout: base
 ---
+
+# Food
 
 <ul>
 {% for food in collections.foods | reverse %}

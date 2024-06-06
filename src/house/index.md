@@ -1,6 +1,6 @@
 ---
 title: houses
-layout: house
+layout: base
 ---
 
 <ul>

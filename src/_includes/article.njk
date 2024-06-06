@@ -3,6 +3,8 @@ layout: base.njk
 ---
 
 <article>
-    <h1>{{ title }}</h1>    
+    <h1>{{ title }}</h1>
+    <span>Published: {{ published | postDate }}</span>
+    <img id="article-hero" src="{{ hero }}" alt="{{ heroalt }}" />
     {{ content | safe}}
 </article>

@@ -1,6 +1,6 @@
 ---
 title: stories
-layout: story
+layout: base
 ---
 
 <ul>

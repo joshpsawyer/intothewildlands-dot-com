@@ -1,8 +1,29 @@
 {
-    "ingredients": [
+    "structures": [
         {
-            "subheading": "Dough",
-            "ingredients": [
+            "type": "ingredients",
+            "heading": "Dough",
+            "display_heading": "true",
+            "contents": [
+                {
+                    "label": "<em>milk</em>, buttermilk or milk substitute",
+                    "measurement": "1 cup",
+                    "measurement_alt": "240ml",
+                    "note": "fresh from a butt"
+                },
+                {
+                    "label": "granulated sugar",
+                    "measurement": "2/3 cup",
+                    "measurement_alt": "135g",
+                    "note": "fresh from a butt"
+                }
+            ]
+        },
+        {
+            "type": "ingredients",
+            "heading": "Filling",
+            "display_heading": "true",
+            "contents": [
                 {
                     "label": "milk, buttermilk or milk substitute",
                     "measurement": "1 cup",
@@ -18,10 +39,12 @@
             ]
         },
         {
-            "subheading": "Filling",
-            "ingredients": [
+            "type": "ingredients",
+            "heading": "Icing",
+            "display_heading": "true",
+            "contents": [
                 {
-                    "label": "milk, buttermilk or milk substitute",
+                    "label": "<em>milk</em>, buttermilk or milk substitute",
                     "measurement": "1 cup",
                     "measurement_alt": "240ml",
                     "note": "fresh from a butt"
@@ -34,45 +57,48 @@
                 }
             ]
         },
-        {
-            "subheading": "Icing",
-            "ingredients": [
-                {
-                    "label": "milk, buttermilk or milk substitute",
-                    "measurement": "1 cup",
-                    "measurement_alt": "240ml",
-                    "note": "fresh from a butt"
-                },
-                {
-                    "label": "granulated sugar",
-                    "measurement": "2/3 cup",
-                    "measurement_alt": "135g",
-                    "note": "fresh from a butt"
-                }
-            ]
-        }
-    ],
-    "instructions": [
-        {
-            "step": "mixa mixa mixa",
-            "image": "/images/food/overnight-cinnamon-rolls.png",
-            "imagealt": "same cinnamon rolls"
-        }
-    ],
-    "notes": [
-        "The richer the milk, the richer cinnamon rolls. There will obviously be a difference between soy and buttermilk."
-    ],
-    "references": [
-        {
-            "title": "Sally's Baking Addiction Homemade Overnight Cinnamon Rolls",
-            "url": "https://sallysbakingaddiction.com/overnight-cinnamon-rolls/",
-            "published": "12/23/2023",
-            "accessed": "2024-06-05"
-        },
-        {
-            "title": "Mrs. Enger’s Cinnamon Rolls",
-            "url": "https://www.tosasallcityread.com/wp-content/uploads/2014/01/Mrs.-Engers-Cinnamon-Rolls.pdf",
-            "accessed": "2024-06-05"
-        }
-    ]
+    {
+        "type": "instructions",
+        "heading": "Steps",
+        "display_heading": "true",
+        "contents": [
+            {
+                "step": "mixa mixa mixa",
+                "image": "/images/food/overnight-cinnamon-rolls.png",
+                "imagealt": "same cinnamon rolls"
+            },
+            {
+                "step": "mixa mixa mixa",
+                "image": "/images/food/overnight-cinnamon-rolls.png",
+                "imagealt": "same cinnamon rolls"
+            }
+        ]
+    },
+    {
+        "type": "ordered_list",
+        "heading": "Notes",
+        "display_heading": "true",
+        "contents": [
+            "The richer the milk, the richer cinnamon rolls. There will obviously be a difference between soy and buttermilk."
+        ]
+    },
+    {
+        "type": "references",
+        "heading": "References",
+        "display_heading": "true",
+        "contents": [
+            {
+                "title": "Sally's Baking Addiction Homemade Overnight Cinnamon Rolls",
+                "url": "https://sallysbakingaddiction.com/overnight-cinnamon-rolls/",
+                "published": "12/23/2023",
+                "accessed": "2024-06-05"
+            },
+            {
+                "title": "Mrs. Enger’s Cinnamon Rolls",
+                "url": "https://www.tosasallcityread.com/wp-content/uploads/2014/01/Mrs.-Engers-Cinnamon-Rolls.pdf",
+                "accessed": "2024-06-05"
+            }
+        ]
+    }
+]
 }
