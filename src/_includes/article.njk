@@ -8,7 +8,7 @@ layout: base.njk
     <img id="article-hero" src="{{ hero }}" alt="{{ heroalt }}" />
     {% endif %}
     {{ content | safe}}
-    <span id="date_created">Created: {{ page.date | postDate }}</span><br/>
+    <span id="date_created">Created: {{ published | postDate }}</span><br/>
     {% if last_modified %}
     <br/>
     <span id="date_modified">Last Modified: {{ last_modified | postDate }}</span>

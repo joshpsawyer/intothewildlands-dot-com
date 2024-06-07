@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noimageai" />
-  <meta name="robots" content="noai" />
-  <link rel="stylesheet" href="{{ '/css/style.css' | url | bust }}" type="text/css" />
-  <link rel="stylesheet" href="{{ '/css/print.css' | url | bust }}" type="text/css" media="print" />
-  <title>{{ title }} - {{ website.title }}</title>
-</head>
+{% include "partials/head.njk" %}
 <body>
   <!-- <input id="color-mode" type="checkbox" name="color-mode">
    <label for="color-mode">

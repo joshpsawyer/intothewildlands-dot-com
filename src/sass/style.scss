@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
     &:hover {
       background-color: var(--color-three);
       color: var(--color-background);
-
+      border: 3px dashed #CB9D06;
     }
   }
 }

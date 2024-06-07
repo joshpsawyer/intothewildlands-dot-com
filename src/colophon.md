@@ -1,7 +1,7 @@
 ---
 title: Colophon
 layout: article
-date: Created
+published: 2024-06-04
 last_modified: 2024-06-07
 ---
 
