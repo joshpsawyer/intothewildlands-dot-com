@@ -58,7 +58,7 @@ body .color-scheme-wrapper {
   text-decoration: none;
 }
 #nav-wrapper nav {
-  font-family: "fixedsys", "Courier", "Courier Prime", "Courier New", sans-serif;
+  font-family: "fixedsys", "Courier Prime", "Courier New", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,17 +127,23 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1.1;
-  font-family: "fixedsys", "Courier", "Courier Prime", "Courier New", sans-serif;
+  font-family: "fixedsys", "Courier Prime", "Courier New", sans-serif;
 }
 
 #index-nav nav {
-  font-family: "fixedsys", "Courier", "Courier Prime", "Courier New", sans-serif;
+  font-family: "fixedsys", "Courier Prime", "Courier New", sans-serif;
   text-align: center;
   font-size: 2rem;
 }
 #index-nav nav a {
   display: block;
   padding: 1rem 2rem;
+  border: 3px dashed #000;
+  text-decoration: none;
+}
+#index-nav nav a:hover {
+  background-color: var(--color-three);
+  color: var(--color-background);
 }
 
 img#article-hero {
@@ -155,5 +161,9 @@ img.recipeimage {
 }
 
 code {
-  font-family: "fixedsys";
+  font-family: "fixedsys", "Courier Prime", "Courier New", sans-serif;
+}
+
+#date_created, #date_modified {
+  font-family: "fixedsys", "Courier Prime", "Courier New", sans-serif;
 }
