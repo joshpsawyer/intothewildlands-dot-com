@@ -132,6 +132,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #index-nav nav {
   font-family: "fixedsys", "Courier", "Courier Prime", "Courier New", sans-serif;
+  text-align: center;
+  font-size: 2rem;
 }
 #index-nav nav a {
   display: block;
