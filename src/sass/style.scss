@@ -39,6 +39,10 @@
   font-family: "Kenney Pixel", 'Share Tech Mono', 'Courier Prime', 'Courier New', sans-serif;
 }
 
+@mixin fixedsys-stack {
+  font-family: 'fixedsys', 'Courier Prime', 'Courier New', sans-serif;
+}
+
 @mixin kenney-pixel-1p5x {
   @include kenney-pixel;
 
@@ -150,7 +154,7 @@ body {
 
   #site-logo-text {
     text-align: center;
-    font-family: 'fixedsys', 'Courier Prime', 'Courier New', sans-serif;
+    @include fixedsys-stack();
     text-transform: uppercase;
     font-size: 2rem;
     
@@ -160,7 +164,7 @@ body {
   }
 
   nav {
-    font-family: 'fixedsys', 'Courier', 'Courier Prime', 'Courier New', sans-serif;
+    @include fixedsys-stack();
 
     display: flex;
     justify-content: center;
@@ -188,7 +192,7 @@ body {
 }
 
 #footer-wrapper {
-  font-family: 'fixedsys', 'Courier Prime', 'Courier New', sans-serif;
+  @include fixedsys-stack();
 
   footer {
     margin: 0 auto;
@@ -232,19 +236,27 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	line-height: 1.1;
 	// margin-bottom: .8em;
-    font-family: 'fixedsys', 'Courier', 'Courier Prime', 'Courier New', sans-serif;
+    @include fixedsys-stack();
 }
 
 
 
 #index-nav nav {
-  font-family: 'fixedsys', 'Courier', 'Courier Prime', 'Courier New', sans-serif;
+  @include fixedsys-stack();
 
   text-align: center;
   font-size: 2rem;
   a {
     display: block;
     padding: 1rem 2rem;
+    border: 3px dashed #000;
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--color-three);
+      color: var(--color-background);
+
+    }
   }
 }
 
@@ -263,5 +275,9 @@ img.recipeimage {
 }
 
 code {
-  font-family: "fixedsys";
+  @include fixedsys-stack();
+}
+
+#date_created, #date_modified {
+  @include fixedsys-stack();
 }
