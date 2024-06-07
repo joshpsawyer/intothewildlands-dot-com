@@ -30,23 +30,27 @@
 }
 
 body {
-  font-family: "Courier", sans-serif;
+  font-family: "Courier", "Courier Prime", "Courier New", sans-serif;
   font-size: 16px;
   height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   overflow-x: auto;
   overflow-y: scroll;
-  grid-template-columns: 1fr;
   margin: 0 auto;
   color: var(--color-font);
   cursor: url("/assets/images/cursor-pointer.png") 12 0, auto;
+}
+body .color-scheme-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
   background-color: var(--color-background);
+  color: var(--color-font);
 }
 
 #nav-wrapper #site-logo-text {
   text-align: center;
-  font-family: "fixedsys", "Kenney Pixel Square", "Share Tech Mono", "Courier Prime", "Courier New", sans-serif;
+  font-family: "fixedsys", "Courier Prime", "Courier New", sans-serif;
   text-transform: uppercase;
   font-size: 2rem;
 }
@@ -72,12 +76,18 @@ body {
   max-width: var(--site-width);
 }
 
+#footer-wrapper {
+  font-family: "fixedsys", "Courier Prime", "Courier New", sans-serif;
+}
 #footer-wrapper footer {
   margin: 0 auto;
   max-width: var(--site-width);
   color: lightgray;
   padding: 2rem 0;
   text-align: center;
+}
+#footer-wrapper footer a {
+  text-decoration: none;
 }
 
 p {
@@ -139,4 +149,5 @@ img.recipeimage {
   max-width: 100%;
   width: 100%;
   height: auto;
+  image-rendering: pixelated;
 }
