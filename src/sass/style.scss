@@ -55,9 +55,20 @@
 :root {
   --site-width: 45rem;
   --color-one: #902923;
-  --color-two: #F5F1C6;
+  --color-background: #FFF;
   --color-three: #631C18;
+  --color-font: #000;
 }
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --site-width: 45rem;
+//     --color-one: #76ABAE;
+//     --color-background: #222831;
+//     --color-three: #76ABAE;
+//     --color-font: #EEEEEE;
+//   }
+// }
 
 body {
     font-family: 'Courier', sans-serif;
@@ -70,10 +81,12 @@ body {
     grid-template-columns: 1fr;
     margin: 0 auto;
 
+    color: var(--color-font);
+
     cursor: url("/assets/images/cursor-pointer.png") 12 0,auto;
 
-    // background-color: var(--color-two);
-    // color: var(--color-two)
+    background-color: var(--color-background);
+    // color: var(--color-background)
 }
 
 #nav-wrapper {
