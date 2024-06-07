@@ -24,8 +24,9 @@
 :root {
   --site-width: 45rem;
   --color-one: #902923;
-  --color-two: #F5F1C6;
+  --color-background: #FFF;
   --color-three: #631C18;
+  --color-font: #000;
 }
 
 body {
@@ -38,7 +39,9 @@ body {
   overflow-y: scroll;
   grid-template-columns: 1fr;
   margin: 0 auto;
+  color: var(--color-font);
   cursor: url("/assets/images/cursor-pointer.png") 12 0, auto;
+  background-color: var(--color-background);
 }
 
 #nav-wrapper #site-logo-text {
