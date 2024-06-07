@@ -11,6 +11,16 @@
   src: url("/assets/fonts/kenney_pixel-webfont.woff") format("woff"), url("/assets/fonts/kenney_pixel-webfont.woff2") format("woff2");
   /* font-display: swap; */
 }
+@font-face {
+  font-family: "fixedsys";
+  src: url("assets/fonts/fsex300-webfont.eot");
+  src: url("assets/fonts/fsex300-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/fsex300-webfont.woff") format("woff"), url("/assets/fonts/fsex300-webfont.ttf") format("truetype"), url("assets/fonts/fsex300-webfont.svg#fixedsys") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-smooth: never;
+}
 :root {
   --site-width: 45rem;
   --color-one: #902923;
@@ -20,6 +30,7 @@
 
 body {
   font-family: "Courier", sans-serif;
+  font-size: 16px;
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -32,12 +43,15 @@ body {
 
 #nav-wrapper #site-logo-text {
   text-align: center;
-  font-family: "Kenney Pixel Square", "Share Tech Mono", "Courier Prime", "Courier New", sans-serif;
+  font-family: "fixedsys", "Kenney Pixel Square", "Share Tech Mono", "Courier Prime", "Courier New", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 #nav-wrapper #site-logo-text a {
   text-decoration: none;
 }
 #nav-wrapper nav {
+  font-family: "fixedsys", "Courier", "Courier Prime", "Courier New", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,9 +114,12 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1.1;
-  font-family: "Kenney Pixel", "Share Tech Mono", "Courier Prime", "Courier New", sans-serif;
+  font-family: "fixedsys", "Courier", "Courier Prime", "Courier New", sans-serif;
 }
 
+#index-nav nav {
+  font-family: "fixedsys", "Courier", "Courier Prime", "Courier New", sans-serif;
+}
 #index-nav nav a {
   display: block;
   padding: 1rem 2rem;
