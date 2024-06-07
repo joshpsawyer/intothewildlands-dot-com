@@ -13,7 +13,7 @@ _into the wildlands_ is:
 
 the images on the website are mostly processed as follows:
 
-1. take any image and reduce it's resolution to no more than 256 x 256.
-2. change the aspect ratio to 4:3.
-3. save the image as an 16 color, 100% dithered PNG. I'm doing this with photoshop's "save for web (legacy)" option.
+1. crop the photo at a high resolution to a 4:3 aspect ratio, landscaped
+2. reduce the image resolution to 256 pixels wide / 192 pixels high
+3. save the image with either 16 or 32 colors and as a 100% dithered PNG. I'm doing this with photoshop's "save for web (legacy)" option.
 4. the css propety `image-rendering: pixelated;` must be set or they'll be smoothed.
