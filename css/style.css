@@ -151,3 +151,7 @@ img.recipeimage {
   height: auto;
   image-rendering: pixelated;
 }
+
+code {
+  font-family: "fixedsys";
+}
