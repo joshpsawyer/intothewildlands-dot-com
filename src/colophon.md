@@ -1,9 +1,11 @@
 ---
 title: Colophon
 layout: article
+date: Created
+last_modified: 2024-06-07
 ---
 
-_into the wildlands_ is:
+**INTO THE WILDLANDS** is:
 
 - a collection of recipes and tutorials
 - a repository of info for my kids

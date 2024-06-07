@@ -4,7 +4,14 @@ layout: base.njk
 
 <article>
     <h1>{{ title }}</h1>
-    <span>Published: {{ published | postDate }}</span>
+    {% if hero %}
     <img id="article-hero" src="{{ hero }}" alt="{{ heroalt }}" />
+    {% endif %}
     {{ content | safe}}
+    <span>Created: {{ page.date | postDate }}</span>
+    {% if last_modified %}
+    <br/>
+    <span>Last Modified: {{ last_modified | postDate }}</span>
+    {% endif %}
+
 </article>
