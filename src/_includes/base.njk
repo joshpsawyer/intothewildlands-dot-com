@@ -8,7 +8,6 @@
   <div class="color-scheme-wrapper">
     <div id="nav-wrapper">
       <div id="site-logo-text"><a href="/">into the wildlands</a></div>
-      <div>{% include "partials/navigation.njk" %}</div>
     </div>
     <div id="main-wrapper">
       <main>
@@ -17,7 +16,8 @@
     </div>
     <div id="footer-wrapper">
       <footer>
-        <a href="/colophon/">
+        <div>{% include "partials/navigation.njk" %}</div>
+        <br/><a href="/colophon/">
           (-_-)
         </a>
       </footer>
