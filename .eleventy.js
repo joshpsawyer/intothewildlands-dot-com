@@ -24,7 +24,12 @@ module.exports = function (eleventyConfig) {
     });
   
     eleventyConfig.addFilter('sortByTitle', values => {
-      return values.slice().sort((a, b) => a.data.title.localeCompare(b.data.title))
+      return values.slice().sort((a, b) => a.data.indexname.localeCompare(b.data.indexname))
+    });
+  
+    eleventyConfig.addCollection("myCollectionName", function (collectionApi) {
+      // get unsorted items
+      return collectionApi.getAll();
     });
   
     eleventyConfig.addFilter("postDate", (dateObj) => {
