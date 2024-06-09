@@ -1,12 +1,14 @@
 ---
 title: Food
 layout: base
+collections: ["foods"]
+
 ---
 
-# Food
+<h1>Food</h1>
 
 <ul>
-{% for food in collections.foods | reverse %}
+{% for food in collections.foods | sort(reverse=false, caseSens=false, attr="data.title")  %}
     <li>
         <a href="{{ food.url }}">{{ food.data.indexname }}</a>
     </li>

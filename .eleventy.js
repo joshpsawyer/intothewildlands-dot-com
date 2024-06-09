@@ -11,6 +11,11 @@ module.exports = function (eleventyConfig) {
 		  files: './_site/css/**/*.css'
     });
   
+  	eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+      // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+      return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+    });  
+  
     eleventyConfig.addFilter("bust", (url) => {
       const [urlPart, paramPart] = url.split("?");
       const params = new URLSearchParams(paramPart || "");
@@ -18,9 +23,17 @@ module.exports = function (eleventyConfig) {
       return `${urlPart}?${params}`;
     });
   
+    eleventyConfig.addFilter('sortByTitle', values => {
+      return values.slice().sort((a, b) => a.data.title.localeCompare(b.data.title))
+    });
+  
     eleventyConfig.addFilter("postDate", (dateObj) => {
       return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
+  
+    // eleventyConfig.addFilter("log", (obj) => {
+    //   console.log(obj);
+    // });
   
     // Return your Object options:
     return {

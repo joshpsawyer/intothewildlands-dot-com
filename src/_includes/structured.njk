@@ -27,9 +27,9 @@ layout: base.njk
             </section>
         {% endfor %}
     {% endif %}
-    <span id="date_created">Created: {{ published | postDate }}</span><br/>
+    <span id="date_created">Created: {{ published | htmlDateString }}</span><br/>
     {% if last_modified %}
     <br/>
-    <span id="date_modified">Last Modified: {{ last_modified | postDate }}</span>
+    <span id="date_modified">Last Modified: {{ last_modified | htmlDateString }}</span>
     {% endif %}
 </article>
