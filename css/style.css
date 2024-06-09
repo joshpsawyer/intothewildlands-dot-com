@@ -13,8 +13,8 @@
 }
 @font-face {
   font-family: "fixedsys";
-  src: url("assets/fonts/fsex300-webfont.eot");
-  src: url("assets/fonts/fsex300-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/fsex300-webfont.woff") format("woff"), url("/assets/fonts/fsex300-webfont.ttf") format("truetype"), url("assets/fonts/fsex300-webfont.svg#fixedsys") format("svg");
+  src: url("/assets/fonts/fsex300-webfont.eot");
+  src: url("/assets/fonts/fsex300-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/fsex300-webfont.woff") format("woff"), url("/assets/fonts/fsex300-webfont.ttf") format("truetype"), url("/assets/fonts/fsex300-webfont.svg#fixedsys") format("svg");
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: none;
@@ -173,4 +173,8 @@ code {
 
 #date_created, #date_modified {
   font-family: "fixedsys", "Courier Prime", "Courier New", sans-serif;
+}
+
+ol, ul {
+  line-height: 1.5rem;
 }
