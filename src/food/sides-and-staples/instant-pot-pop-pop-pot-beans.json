@@ -1,0 +1,34 @@
+{
+    "ingredients": [
+        {
+            "label": "pinto beans",
+            "measurement": "1 lb",
+            "measurement_alt": "453 grams"
+        },
+        {
+            "label": "onion, yellow or red, diced",
+            "measurement": "1/2 cup",
+            "measurement_alt": "a smallish one",
+            "note": "this can be approximate, it doesn't really matter"
+        },
+        {
+            "label": "chicken boullion, either real or fake",
+            "measurement": "6 cups"
+        },
+        {
+            "label":  "kosher salt",
+            "measurement": "1.5 teaspoons"
+        }
+    ],
+    "instructions": [
+        {
+            "step": "Get the water hot enough to dissolve the honey. PDT is about 140&deg;F and you can drink it right away."
+        },
+        {
+            "step": "Combine all ingredients and stir until the honey is dissolved."
+        },
+        {
+            "step": "Serve _immediately_ to your sick family member, maybe with some of <a href=\"/food/dessert/jelly-graham-cracker-sandwich/\">Gortimer's Graham Cracker Sandwiches?</a>"
+        }
+    ]
+}
