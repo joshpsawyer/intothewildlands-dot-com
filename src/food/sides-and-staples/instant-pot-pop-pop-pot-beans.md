@@ -10,10 +10,13 @@ heroalt: two lemons and a jar of raw clover honey
 
 Sheila said it's insane to call a recipe Instant Pot Pot Beans. Darnold thought I
 said Pop Pop Beans. Now they're Instant Pot Pop Pop Pot Beans. If you make them
-with pintos, they're Insant Pot Pop Pop Pinto Pot Beans.
+with pintos, they're Instant Pot Pop Pop Pinto Pot Beans.
 
-This is a simple recipe for soft beans that you can crush fully between your fingers and are full of flavor.
-Combining two other recipes[^1][^2], these beans can be smushed into a taco with rice and not fall out, or mashed into _quesadilla con huevos_ and not result in a jarring texture difference.
+Combining two other recipes[^1][^2], the resulting bean is easily crushed between your fingers to a bean pulp but
+retains its shape otherwise. No mealiness here, it's all bean cream, my dude.
+
+Smash them into your tacos and they'll stay put and not mess up your beautiful shirt.
+Crush 'em into a _quesadilla con huevos_ and you won't get that nasty texture mismatch.
 
 ## Ingredients
 
