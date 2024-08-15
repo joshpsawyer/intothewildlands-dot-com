@@ -3,8 +3,8 @@ title: Instant Pot (Pop Pop) Pot Beans
 indexname: Beans, Pot
 tags: foods
 published: 2024-06-15
-hero: /images/food/one-two-eight-tea.png
-heroalt: two lemons and a jar of raw clover honey
+hero: /images/food/instant-pot-beans.png
+heroalt: a bowl of beans with some cooking liquid on a dinosaur plate on a butcherblock island
 ---
 *[PDT]: Perfect Drinking Temperature
 
